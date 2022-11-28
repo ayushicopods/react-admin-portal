@@ -1,0 +1,30 @@
+.userProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userProfileImage img {
+  padding: 4px;
+  border: 1px solid #f5f5f5;
+  border-radius: 50%;
+}
+
+.userName {
+  color: #6c757d;
+  font-size: 14.4px;
+  font-weight: 600;
+  margin: 4px;
+  font-family: Karla, sans-serif;
+  text-overflow: ellipsis;
+}
+.userDesignation {
+  color: #98a6ad;
+  margin-top: 0;
+  font-size: 14.4px;
+}
+
+.iconsContainer {
+  display: flex;
+  gap: 10px;
+}
