@@ -12,7 +12,7 @@
 
 .userName {
   color: #6c757d;
-  font-size: 14.4px;
+  font-size: 0.875rem;
   font-weight: 600;
   margin: 4px;
   font-family: Karla, sans-serif;
@@ -21,10 +21,67 @@
 .userDesignation {
   color: #98a6ad;
   margin-top: 0;
-  font-size: 14.4px;
+  font-size: 0.875rem;
 }
 
 .iconsContainer {
   display: flex;
   gap: 10px;
+}
+
+.sidenavIcon {
+  font-size: 0.875rem !important;
+  color: #6c757d;
+}
+
+.activeIcon {
+  font-size: 0.875rem !important;
+  color: #71b6f9;
+}
+
+/* side Nav items */
+
+.itemsHeading {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  color: #6e768e;
+  letter-spacing: 0.55px;
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+}
+
+.itemsWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.625rem;
+  color: #6e768e;
+  cursor: pointer;
+}
+
+.itemsLabelwithIcon {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  font-size: 0.875rem;
+}
+
+.itemsLabelwithIcon span {
+  font-family: Karla, sans-serif;
+  font-size: 0.95rem;
+}
+
+.itemsWrapper:hover,
+.itemsWrapper:hover .sidenavIcon {
+  color: #71b6f9;
+}
+
+.subitemsWrapper {
+  margin-left: 1.625rem;
+}
+.nav-text {
+  display: flex;
+  flex-direction: column;
+}
+.nav-text-small {
+  font-size: 10px !important;
 }

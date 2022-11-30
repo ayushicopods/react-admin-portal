@@ -1,23 +1,50 @@
 import React from "react";
 import SettingsIcon from "@mui/icons-material/Settings";
 import PowerSettingsNewIcon from "@mui/icons-material/PowerSettingsNew";
+import { Tooltip } from "@mui/material";
 import "./sidenav.css";
-import { Icon } from "@mui/material";
+import { CLICK_HERE, PROFILE_PICTURE } from "../constants/constants";
 
-function UserProfile({ image, name, designation }) {
+function UserProfile({
+  image,
+  imageHeight,
+  imageWidth,
+  name,
+  designation,
+  settingIconStyle,
+  logoutIconStyle,
+}) {
   return (
     <div className="userProfile">
       <div className="userProfileImage">
-        <img src={image} alt="" width={46} height={46} />
+        <img
+          src={image}
+          tabIndex="0"
+          alt={PROFILE_PICTURE + name}
+          width={imageWidth}
+          height={imageHeight}
+        />
       </div>
-      <p className="userName">{name}</p>
-      <p className="userDesignation">{designation}</p>
+      <p className="userName" tabIndex="0" aria-label={"user" + name}>
+        {name}
+      </p>
+      <p
+        className="userDesignation"
+        tabIndex="0"
+        aria-label={"logged in as " + designation}
+      >
+        {designation}
+      </p>
       <div className="iconsContainer">
-        <a href="">
-          <SettingsIcon style={{ fontSize: 15, color: "#98a6ad" }} />
+        <a href="" tabIndex="0" aria-label={CLICK_HERE + "for user setting"}>
+          <Tooltip title="setting">
+            <SettingsIcon className={settingIconStyle} />
+          </Tooltip>
         </a>
-        <a href="">
-          <PowerSettingsNewIcon style={{ fontSize: 15, color: "#74b7f7" }} />
+        <a href="" aria-label={CLICK_HERE + "to log out"} tabIndex="0">
+          <Tooltip title="logout">
+            <PowerSettingsNewIcon className={logoutIconStyle} />
+          </Tooltip>
         </a>
       </div>
     </div>

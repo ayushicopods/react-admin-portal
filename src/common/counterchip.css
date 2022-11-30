@@ -1,0 +1,9 @@
+.counterChip {
+  background-color: #10c469;
+  padding: 0.25em 0.4em;
+  border-radius: 50rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.75em;
+  text-align: center;
+}
