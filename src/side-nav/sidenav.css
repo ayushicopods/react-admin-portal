@@ -5,8 +5,8 @@
 }
 
 .userProfileImage img {
-  padding: 4px;
-  border: 1px solid #f5f5f5;
+  padding: 0.25rem;
+  border: 0.063rem solid #f5f5f5;
   border-radius: 50%;
 }
 
@@ -14,7 +14,7 @@
   color: #6c757d;
   font-size: 0.875rem;
   font-weight: 600;
-  margin: 4px;
+  margin: 0.25rem;
   font-family: Karla, sans-serif;
   text-overflow: ellipsis;
 }
@@ -45,9 +45,9 @@
   font-size: 0.6875rem;
   font-weight: 500;
   color: #6e768e;
-  letter-spacing: 0.55px;
+  letter-spacing: 0.034rem;
   font-family: "Roboto", sans-serif;
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 .itemsWrapper {
@@ -61,7 +61,7 @@
 .itemsLabelwithIcon {
   display: flex;
   align-items: start;
-  gap: 10px;
+  gap: 0.625rem;
   font-size: 0.875rem;
 }
 
@@ -83,5 +83,5 @@
   flex-direction: column;
 }
 .nav-text-small {
-  font-size: 10px !important;
+  font-size: 0.625rem !important;
 }

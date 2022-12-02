@@ -120,6 +120,82 @@ export default function SideNav() {
         },
       ],
     },
+    {
+      id: "apps",
+      heading: "Apps",
+      items: [
+        {
+          id: "Calender",
+          icon: CalendarTodayOutlinedIcon,
+          label: "Calender",
+          itemsIconstyle: "sidenavIcon",
+          counter: 2,
+        },
+        {
+          id: "Chat",
+          icon: ForumOutlinedIcon,
+          label: "Chat",
+          itemsIconstyle: "sidenavIcon",
+          counter: 3,
+        },
+        {
+          id: "Email",
+          icon: EmailOutlinedIcon,
+          label: "Email",
+          itemsIconstyle: "sidenavIcon",
+          counter: 10,
+        },
+        {
+          id: "Tasks",
+          icon: ContentPasteOutlinedIcon,
+          label: "Tasks",
+          itemsIconstyle: "sidenavIcon",
+          subMenuItems: {
+            items: [
+              {
+                id: "contactList",
+                label: "Contacts",
+                counter: 12,
+              },
+            ],
+          },
+        },
+        {
+          id: "Projects",
+          icon: BusinessCenterOutlinedIcon,
+          label: "Projects",
+          itemsIconstyle: "sidenavIcon",
+          subMenuItems: {
+            items: [
+              {
+                id: "contactList",
+                label: "ProjectsList",
+                icon: BusinessCenterOutlinedIcon,
+                itemsIconstyle: "sidenavIcon",
+                subMenuItems: {
+                  items: [
+                    {
+                      id: "project",
+                      label: "Projec dad",
+                      counter: 12,
+                      icon: BusinessCenterOutlinedIcon,
+                      itemsIconstyle: "sidenavIcon",
+                    },
+                  ],
+                },
+              },
+            ],
+          },
+        },
+        {
+          id: "Contacts",
+          icon: AutoStoriesOutlinedIcon,
+          label: "Contacts",
+          itemsIconstyle: "sidenavIcon",
+          counter: 12,
+        },
+      ],
+    },
   ];
   return (
     <div className="sidenavConatiner flex flex-col">
