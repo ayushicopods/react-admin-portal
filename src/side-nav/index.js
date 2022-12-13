@@ -32,15 +32,8 @@ export default function SideNav() {
           icon: DashboardOutlinedIcon,
           label: "Dashboard",
           itemsIconstyle: "sidenavIcon",
-          subMenuItems: {
-            items: [
-              {
-                id: "contactList",
-                label: "ProjectsList",
-                counter: 12,
-              },
-            ],
-          },
+          counter: 10,
+          slug: "dashboard",
         },
       ],
     },
@@ -54,6 +47,7 @@ export default function SideNav() {
           label: "Calender",
           itemsIconstyle: "sidenavIcon",
           counter: 2,
+          slug: "calender",
         },
         {
           id: "Chat",
@@ -61,6 +55,7 @@ export default function SideNav() {
           label: "Chat",
           itemsIconstyle: "sidenavIcon",
           counter: 3,
+          slug: "chat",
         },
         {
           id: "Email",
@@ -68,6 +63,7 @@ export default function SideNav() {
           label: "Email",
           itemsIconstyle: "sidenavIcon",
           counter: 10,
+          slug: "email",
         },
         {
           id: "Tasks",
@@ -80,6 +76,7 @@ export default function SideNav() {
                 id: "contactList",
                 label: "Contacts",
                 counter: 12,
+                slug: "contacts",
               },
             ],
           },

@@ -56,6 +56,7 @@
   padding: 0.625rem;
   color: #6e768e;
   cursor: pointer;
+  width: 100%;
 }
 
 .itemsLabelwithIcon {
@@ -84,4 +85,13 @@
 }
 .nav-text-small {
   font-size: 0.625rem !important;
+}
+
+.sidenavConatiner {
+  height: 100%;
+}
+
+.sidenavItems {
+  overflow: auto;
+  flex-grow: 1;
 }

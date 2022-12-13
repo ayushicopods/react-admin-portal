@@ -1,0 +1,18 @@
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  background-color: #e3e9ed;
+  color: #6c757d;
+  font-size: 0.875rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.footerRight {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footerLink {
+  color: #71b6f9;
+}

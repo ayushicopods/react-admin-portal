@@ -59,3 +59,22 @@
   font-weight: 600;
   font-size: 1.125rem;
 }
+#basic-menu {
+  min-width: 10.625rem !important;
+}
+.menuItems {
+  padding: 0.438rem 1.25rem !important;
+}
+
+.menuItemHeading {
+  padding: 0.625rem 1.25rem;
+  font-size: 0.75rem;
+  font-family: "Karla", sans-serif;
+  color: #343a40;
+  font-weight: 600;
+}
+
+.menuItemLabel {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+}
