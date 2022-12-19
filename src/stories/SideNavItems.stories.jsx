@@ -8,6 +8,7 @@ import ContentPasteOutlinedIcon from "@mui/icons-material/ContentPasteOutlined";
 import BusinessCenterOutlinedIcon from "@mui/icons-material/BusinessCenterOutlined";
 import AutoStoriesOutlinedIcon from "@mui/icons-material/AutoStoriesOutlined";
 import DashboardOutlinedIcon from "@mui/icons-material/DashboardOutlined";
+import { BrowserRouter as Router } from "react-router-dom";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
@@ -23,7 +24,9 @@ export default {
 const TemplateOne = (args) => (
   <div>
     {sidenavitemsprops.map((item, index) => (
-      <SideNavItems key={index} {...item} {...args} />
+      <Router>
+        <SideNavItems key={index} {...item} {...args} />
+      </Router>
     ))}
   </div>
 );
@@ -35,7 +38,9 @@ const TemplateTwo = (args) => (
     }}
   >
     {sidenavitemsprops.map((item, index) => (
-      <SideNavItems key={index} {...item} {...args} />
+      <Router>
+        <SideNavItems key={index} {...item} {...args} />
+      </Router>
     ))}
   </div>
 );
