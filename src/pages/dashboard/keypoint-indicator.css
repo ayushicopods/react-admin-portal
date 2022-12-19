@@ -1,0 +1,46 @@
+.cardContainer {
+  width: 14.375rem;
+  height: 11.25rem;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+}
+
+.salesAnalyticsWrapper {
+  gap: 1.25rem;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardHeader h4 {
+  font-size: 1rem;
+  font-family: "Karla", sans-serif;
+  font-weight: 600;
+}
+
+.cardContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardDetails h1 {
+  font-size: 1.875rem;
+  text-align: end;
+  font-family: "Karla", sans-serif;
+}
+
+.cardDetails span {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  color: #98a6ad;
+}
